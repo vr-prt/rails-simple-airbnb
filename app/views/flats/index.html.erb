@@ -14,9 +14,9 @@
           </div>
           <hr>
           <div class="card-end">
-            <%= link_to 'More info' %>
-            <%= link_to 'Edit' %>
-            <%= link_to 'Remove' %>
+            <%= link_to 'More info', flat_path(flat) %>
+            <%= link_to 'Edit', edit_flat_path(flat) %>
+            <%= link_to 'Remove', flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
           </div>
         </div>
       </div>

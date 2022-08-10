@@ -1,0 +1,22 @@
+<div class="show-header">
+</div>
+
+<div class="container show">
+  <div class="show-content">
+    <div class="show-card">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="show-card">
+      <h2>Details</h2>
+      <div>
+        <p><i class="fa-solid fa-user"></i> <%= @flat.number_of_guests %></p>
+        <p><%= @flat.price_per_night %> <i class="fa-solid fa-euro-sign"></i></p>
+      </div>
+    </div>
+    <div class="show-card">
+      <h3>A bit more about this flat...</h3>
+      <p><%= @flat.description %></p>
+    </div>
+  </div>
+</div>

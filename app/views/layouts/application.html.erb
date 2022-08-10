@@ -16,10 +16,9 @@
     <nav id="navbar">
       <div class="container">
         <%= link_to 'Simple Airbnb', flats_path %>
+        <button type="button" class="btn btn-primary"><%= link_to 'Add Flat', new_flat_path %></button>
       </div>
     </nav>
-    <div class="container mt-3">
-      <%= yield %>
-    </div>
+    <%= yield %>
   </body>
 </html>
